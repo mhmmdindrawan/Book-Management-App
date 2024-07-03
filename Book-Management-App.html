@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Management App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Book Management App</h1>
+
+    <!-- Form to add new book -->
+    <form id="addBookForm">
+        <input type="text" id="titleInput" placeholder="Title" required>
+        <input type="text" id="authorInput" placeholder="Author" required>
+        <select id="statusInput">
+            <option value="reading">Reading</option>
+            <option value="finished">Finished</option>
+        </select>
+        <button type="submit">Add Book</button>
+    </form>
+
+    <!-- Search form -->
+    <form id="searchForm">
+        <input type="text" id="searchInput" placeholder="Search by Title">
+        <button type="submit">Search</button>
+    </form>
+
+    <!-- Display books -->
+    <div id="readingList">
+        <h2>Reading</h2>
+        <ul id="readingBooks">
+            <!-- Books that are being read will be displayed here -->
+        </ul>
+    </div>
+    <div id="finishedList">
+        <h2>Finished</h2>
+        <ul id="finishedBooks">
+            <!-- Books that are finished will be displayed here -->
+        </ul>
+    </div>
+
+    <div class="centered" style="margin-top: 50px;">
+        Created by Muhammad Indrawan
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
